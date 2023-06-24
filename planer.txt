@@ -1,0 +1,5 @@
+dropdown for what treatment you want ✅
+add submit button - send post request
+make it save to a database after pressing submit - php post
+block off at half hour intervals - time, if possible
+make it look fancy - pictures, titles
