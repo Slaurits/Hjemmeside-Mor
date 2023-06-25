@@ -18,11 +18,19 @@ fclose($fp);
 
 ?>
 
+<style>
+	.confirmation {
+		text-align: center;
+	}
+</style>
 
+<body>
+<div class="confirmation">
 <h1>Behandlingen er hermed bekræftet.</h1>
 <h2>Din tid:</h2>
-
 
 <p><?php echo $_POST['date'] ?></p>
 <p><?php echo $_POST['time'] ?></p>
 <p><?php echo $_POST['treatment'] ?></p>
+</div>
+</body>
