@@ -27,7 +27,7 @@
     <br>
     <div class="select-time">
         <h1 class="select-time__title">Vælg Tiden</h1>
-        <input class="select-time__input" type="time" name="time" id="time" value="<?php echo $_POST['time'] ?? '' ?>" required>
+        <input class="select-time__input" type="time" name="time" id="time" min="08:00" max="17:00" value="<?php echo $_POST['time'] ?? '' ?>" required>
     </div>
     <br>
     <div class="select-treatment">
