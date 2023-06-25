@@ -1,5 +1,5 @@
 dropdown for what treatment you want ✅
 add submit button - send post request ✅
-make it save to a database after pressing submit - php post
+make it save to a csv after pressing submit - php post, fputcsv ✅
 block off at half hour intervals - time, if possible
 make it look fancy - pictures, titles
