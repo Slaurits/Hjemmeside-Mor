@@ -19,7 +19,7 @@
 </style>
 <body>
 
-    <form action="/Hjemmeside Mor/SubmitAppointment.php" method="POST">
+    <form action="/Hjemmeside_Mor/SubmitAppointment.php" method="POST">
     <div class="select-date">
         <h1 class="select-date__title">Vælg Datoen</h1>
         <input class="select-date__input" type="date" name="date" id="date" min="<?php echo date('Y-m-d') ?>" value="<?php echo $_POST['date'] ?? '' ?>" required>
