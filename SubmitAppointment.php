@@ -22,15 +22,27 @@ fclose($fp);
 	.confirmation {
 		text-align: center;
 	}
+	.goback {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
 </style>
 
 <body>
 <div class="confirmation">
+<h1>Tak for at Bestille en tid</h1>
 <h1>Behandlingen er hermed bekræftet.</h1>
 <h2>Din tid:</h2>
 
 <p><?php echo $_POST['date'] ?></p>
 <p><?php echo $_POST['time'] ?></p>
 <p><?php echo $_POST['treatment'] ?></p>
+</div>
+
+<div class="goback">
+	<a href="index.html">
+		<button>Tilbage Til Starten</button>
+	</a>
 </div>
 </body>

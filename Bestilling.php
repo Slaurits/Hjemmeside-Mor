@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,9 +18,9 @@
     }
 </style>
 <body>
-	<img src="Klinik.png" style="float:left">
+	<img src="./images/Klinik.png" style="float:left">
 
-	<img src="Klinik.png" style="float:right">
+	<img src="./images/Klinik.png" style="float:right">
 
     <form action="/Hjemmeside_Mor/SubmitAppointment.php" method="POST">
     <div class="select-date">
