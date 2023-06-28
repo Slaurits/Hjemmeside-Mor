@@ -18,6 +18,9 @@
     }
 </style>
 <body>
+	<img src="Klinik.png" style="float:left">
+
+	<img src="Klinik.png" style="float:right">
 
     <form action="/Hjemmeside Mor/SubmitAppointment.php" method="POST">
     <div class="select-date">
