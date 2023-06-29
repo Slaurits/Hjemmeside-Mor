@@ -27,17 +27,25 @@ fclose($fp);
 		right: 0;
 		bottom: 0;
 	}
+	.image {
+		text-align: center;
+	}
 </style>
 
 <body>
+	<div class="image">
+		<img src="./images/Klinik.png">
+	</div>
 <div class="confirmation">
-<h1>Tak for at Bestille en tid</h1>
-<h1>Behandlingen er hermed bekræftet.</h1>
-<h2>Din tid:</h2>
+<h1>Tak for at bestille en tid.<br>Behandlingen er hermed bekræftet.</h1>
+<h2>Din Tid:<br>
+	<b>Tid: <?php echo $_POST['time'] ?></b><br>
+	<b>Dato: <?php echo $_POST['date'] ?></b><br>
+	<b>Type: <?php echo $_POST['treatment'] ?></b>
 
-<p><?php echo $_POST['date'] ?></p>
-<p><?php echo $_POST['time'] ?></p>
-<p><?php echo $_POST['treatment'] ?></p>
+</h2>
+
+
 </div>
 
 <div class="goback">
