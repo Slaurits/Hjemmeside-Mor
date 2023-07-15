@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bestil her</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
 </head>
 <style>
     .select-date {
@@ -18,6 +20,8 @@
     }
 </style>
 <body>
+	<img src="./images/Klinik.png" style="float:left">
+	<img src="./images/Klinik.png" style="float:right">
 
     <form action="/SubmitAppointment.php" method="POST">
     <div class="select-date">
@@ -26,9 +30,20 @@
     </div>
     <br>
     <div class="select-time">
+<script>
+	$(() => {
+		$('#time').timepicker({
+			timeFormat: 'HH:mm',
+			interval: 30,
+			defaultTime: '830',
+			minTime: '830',
+			maxTime: '17'
+		});
+	});
+</script>
         <h1 class="select-time__title">Vælg Tiden</h1>
-        <input class="select-time__input" type="time" name="time" id="time" min="08:00" max="17:00" value="<?php echo $_POST['time'] ?? '' ?>" required>
-    </div>
+		<input type="text" name="time" id="time" value="<?php echo $_POST['time'] ?? '' ?>" required>
+	</div>
     <br>
     <div class="select-treatment">
         <h1>Vælg hvilken behandling du vil have</h1>
@@ -42,5 +57,7 @@
         <input type="submit" id="submit" value="Submit">
     </div>
     </form>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
 </body>
 </html>
